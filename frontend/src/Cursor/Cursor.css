@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    .cursorCustome {
+        display: "none", 
+    }
+  }
+  
+  /* Hide the cursor on mobile devices */
+  @media (max-width: 767px) {
+    .cursorCustome {
+      display: none;
+    }
+  }
+
+  /* .cursorCustome{
+    width: 40px;
+    height: 40px;
+    position: "fixed";
+    border-radius: 50px;
+    pointer-events: none;
+    border: "2px solid #3B999F";
+    margin-Top: -10;
+    margin-Left: -15;
+    display: "none", 
+  } */

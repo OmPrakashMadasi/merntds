@@ -1,0 +1,35 @@
+.reuseClass{
+    color: whitesmoke !important;
+    font-family:'system-ui'
+}
+footer{
+    background-color:#3B999F;
+    margin-top: 20px;
+    /* height: 187px; */
+}
+.contentright{
+    display: flex;
+    align-items: center;
+    color: green;
+    justify-content: center;
+    font-weight: 700;
+    font-size: smaller;
+    font-family: 'system-ui';
+}
+.social_box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    /* color:rgb(26, 25, 25); */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color:whitesmoke; 
+  }
+  

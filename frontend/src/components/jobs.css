@@ -1,0 +1,9 @@
+/* Jobs.css */
+
+.job-title {
+    color: #007bff; /* Bootstrap primary blue */
+}
+
+.job-detail {
+    color: #fd7e14; /* Bootstrap orange */
+}

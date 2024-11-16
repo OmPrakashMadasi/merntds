@@ -1,0 +1,64 @@
+/* src/ContactUs.css */
+
+.contactContainer1 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 20px;
+  background-color: #333;
+  /* Dark background */
+  color: white;
+  width: 550px;
+  margin-left: -17px;
+  margin-top: -17px;
+  padding-left: 15%;
+  border-radius: 20px;
+
+}
+
+.formSection1 {
+  width: 70%;
+}
+
+.infoSection1 {
+  width: 55%;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.formGroup1 {
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+.submitButton1 {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  /* Orange color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #e64a19;
+  /* Darker orange */
+}
+
+.infoSection p {
+  margin: 5px 0;
+}

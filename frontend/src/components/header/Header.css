@@ -1,0 +1,249 @@
+:root {
+    --text-gradient: linear-gradient(to right, #10234e, #f0966b);
+  }
+  
+  .container-fluid, .navbar, .navbar a, .btn {
+    /* cursor: pointer; */
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f0f2f5;
+    color: #fff;
+    /* padding-top: 100px; */
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  /* background-color:#B87333; */
+  /* background-color:#3B999F; */
+  /* background-color:rgb(169, 79, 141); */
+  background-color:#3B999F;
+    padding: 0 6%;
+    position: fixed;
+    top: 0; /* Start off-screen */
+    width: 100%;
+    z-index: 9999;
+    transition: top 1s ease-in-out; /* Transition effect */
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  
+  .logo img {
+    width: 30px;
+    margin-right: 30px; /* Increased space between logo and list */
+    display: block;
+    border-radius: 50%;
+  }
+  
+  .navbar-collapse {
+    flex-grow: 1; /* Ensures that the navbar items take up available space */
+  }
+  
+  .navbar-collapse ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  
+  .navbar-collapse ul li {
+    margin: 0 15px; /* Adjust spacing between items if needed */
+  }
+  
+  .navbar-collapse ul li a {
+    font-size: 20px;
+    padding: 5px 0;
+    color: whitesmoke;
+    position: relative;
+  }
+  
+  .navbar-collapse ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background:white;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+    text-align: left;
+  }
+  
+  .navbar-collapse ul li a:hover::after,
+  .navbar-collapse ul li a.active-link::after {
+    width: 100%;
+    margin-left: -80%;
+  }
+  
+  .navbar-collapse span {
+    display: ruby;
+  }
+  
+  .nav-profile-img {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-text {
+    text-align: center;
+    color: rgb(235, 232, 232);
+  }
+  
+  .serviceheading , hr {
+    font-size: 40px;
+    background:#B87333;
+    margin-top: 30px;
+    -webkit-background-clip: text; /* For Safari and Chrome */
+    -webkit-text-fill-color: transparent; /* For Safari and Chrome */
+  }
+  
+   .serviceheading hr {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  p {
+    color: rgb(232, 232, 232);
+  }
+  
+  
+  @media (max-width: 768px) {}
+  
+  
+  
+  
+  /* footer css start from here */
+  
+  .footer-col {
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+  }
+  
+  .footer-col h5 {
+    color: white;
+  }
+  
+  .footer-col p,
+  .footer-col span,
+  .footer-col ul li {
+    color: gray;
+  }
+  
+  .footer-col p:hover,
+  .footer-col span:hover,
+  .footer-col ul li:hover {
+    color: orange;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-col strong {
+  color:gray;
+  }
+  /* Ensure the footer is styled to sit at the bottom of the page */
+  footer {
+  position: relative;
+  width: 100%;
+  background-color: #0f1113;
+  color: #fff;
+  padding: 20px 0;
+  
+  }
+  
+  /* Footer columns for better spacing and layout */
+  .footer-col {
+  padding: 10px;
+  }
+  
+  /* Additional styling for footer elements */
+  .footer-col h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  .footer-col ul {
+  padding-left: 0;
+  }
+  .footer-col ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  }
+  
+        html, body {
+          height: 100%;
+          margin: 0;
+      }
+      
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      main {
+          flex: 1; /* Allows main to grow and push footer down */
+      }
+  
+  /* Ensure the footer is positioned correctly */
+  footer {
+      position: relative;
+      
+     
+      background-color: #f1f1f1;
+      clear: both; /* Ensure footer clears floated elements */
+  }
+  
+  
+  .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .project-name {
+    position: relative;
+    color: black;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+  }
+  
+  .project-name::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    /* Position of underline */
+    left: 0;
+    background-color: orange;
+    /* Underline color */
+    transition: width 0.3s ease;
+    /* Smooth underline effect */
+  }
+  
+  .project-name:hover::after {
+    width: 100%;
+    /* Full-width underline on hover */
+  }

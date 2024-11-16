@@ -1,0 +1,388 @@
+.carousel-caption {
+  position: absolute;
+  right: 0%;
+  left: 10%;
+  bottom: 15%;
+  text-align: center;
+  width: auto;
+  color: #000000;
+  margin-right: 0%;
+} 
+
+.responsive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video fills the container without distortion */
+}
+
+
+.carousel-caption h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+@media (max-width: 768px) {
+/* .carousel-caption {
+position: absolute;
+  
+  text-align: center;
+width: auto;
+margin-right: 0%;
+} */
+.carousel-caption h5{
+display: none;
+}
+.carousel-caption h1{
+display: none;
+}
+}
+
+/* css for service cards */
+main {
+  flex: 1;
+}
+
+
+
+/* service flip css start here */
+
+/* Container for the two-column heading and description */
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.02rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+  }
+  
+  .service-title {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .service-title p {
+    font-size: 30px;
+    font-weight: 1000;
+    color: black;
+    
+  }
+  .service-title h4 {
+    font-size: 2.0rem;
+    font-weight: 1000;
+    color: black;
+    
+  }
+  
+  .service-description {
+    flex: 1;
+  }
+  
+  .service-description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    margin-top: 0.5rem;
+    line-height: 1.5; 
+  }
+  
+  /* Responsive layout adjustments */
+  @media only screen and (max-width: 768px) {
+    .service-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-title {
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .service-title h2 {
+      font-size: 1.8rem;
+    }
+  
+    .service-description p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .service-title h2 {
+      font-size: 1.5rem;
+    }
+  
+    .service-description p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+ /* Basic styles */
+ .service-title p {
+    text-align: center;
+    
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .service-title h1 {
+    margin-top: 3rem;
+    text-align: center;
+   
+    font-size: 2rem;
+    font-weight: 400;
+   
+  }
+
+  .service-title h2 {
+    text-align: center;
+   
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+  }
+
+  .service-title h3 {
+    text-align: center;
+
+    font-size: 1.0rem;
+    font-weight: 200;
+  }
+
+
+  .fontfamily {
+    font-family:monospace
+    
+  }
+
+  .flipservices {
+    display: flex;
+    justify-content: flex-start; /* Aligns all cards to the left */
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  /* Flip card styling */
+  .flipcard-container {
+    perspective: 1000px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards ease-out;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Unique styling for the fifth consultation card */
+.flipcard-container.consultation-card {
+    width: 350px; /* Larger width for the consultation card */
+    height: 350px;
+    margin-left: 0 !important; /* Force it to align left */
+  }
+
+
+
+
+  .flipcard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .flipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flipcard:hover .flipcard-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flipcard-front, .flipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .flipcard-front::before, .flipcard-back::before {
+    /* background-image: url(images/homebacground.jpeg); */
+    background-image: url(../../assets/cardsImages/homebacground.jpeg);
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(90deg, #ff6f61, #2980b9, #6dd5fa, #ff6f61, #2980b9, #ff6f61); */
+    z-index: -1;
+    animation: borderAnim 3s linear infinite;
+    background-size: 150%;
+  }
+ 
+
+
+  .flipcard-front {
+    z-index: 1;
+  }
+
+  .flipcard-back {
+   
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+
+  /* Slide-in animation */
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Apply animation to flip cards */
+  .flipcard {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+
+  /* Staggered animation for multiple cards */
+  .flipcard:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  .flipcard:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .flipcard:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .flipcard:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+
+  .flipcard:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  /* Responsive layout for smaller screens */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .flipservices {
+      margin-top: 3rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .flipcard-container {
+      width: 300px;
+      height: 300px;
+     
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .flipservices {
+      margin-top: 3rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .flipcard-container {
+      width: 250px;
+      height: 250px;
+    }
+    /* Adjust consultation card size for mobile */
+  .flipcard-container.consultation-card {
+    width: 100%;
+    height: auto;
+  }
+
+  }
+
+  .consultation-card {
+    background-color: transparent;
+    text-align: center;
+    border: 0;
+    padding: 2rem;
+    height: 100%;
+  }
+
+  .consultation-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .consultation-card p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .information .details {
+    display: flex;
+    gap: 1rem;
+
+  }
+  .information .details div {
+    padding: 0.75em 1em;
+    background-color: var(--c-titan-white);
+    /* background-color: #eee1d4; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.125em;
+    flex-basis: 50%;
+  }
+  .information .details dt {
+    font-size: 0.875rem;
+    color: var(--c-cold-purple);
+  }
+  .information .details dd {
+    color: var(--c-indigo);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+
+
+
+  /* //popup styles// */
+
+
+
+
+  

@@ -1,0 +1,203 @@
+/* src/ContactUsform.css */
+/* .contactContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f1f2;
+  width: 100%;
+} */
+
+
+
+
+/* .formSection {
+  position: relative;
+  padding: 10px 20px; 
+  background: #fff;
+  border-radius: 10px;
+  width: 40%;
+  max-width: 500px;
+  height: 200px; 
+  overflow-y: auto; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 290px;
+} */
+
+
+.formSection {
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  /* margin-bottom: 15px; */
+  /* border-bottom: #327a83; */
+  /* border:1px solid  #327a83; */
+  border-bottom: 0.5px solid rgb(216, 233, 239);
+
+
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #3b999f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #327a83;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.closeButton:hover {
+  color: #3b999f
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .formSection {
+    width: 90%;
+  }
+
+  .row .formGroup {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.formSection {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 98%;
+  max-width: 500px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove unwanted horizontal lines */
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for the close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Disabled submit button (red) */
+.submitButton.disabled {
+  background-color: #7ab6ba;
+  color: white;
+  cursor: not-allowed;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Enabled submit button (blue) */
+.submitButton.enabled {
+  background-color: #3b999f;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Modal overlay that covers the entire screen */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Make sure it's above all other content */
+}
+
+/* Modal content box */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modalContent h2 {
+  font-size: 1.0rem;
+  margin-bottom: 20px;
+}
+
+.modalCloseButton {
+  background-color: #3b999f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalCloseButton:hover {
+  background-color: #2d7f87;
+}
