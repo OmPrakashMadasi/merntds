@@ -28,46 +28,64 @@
 
 
 
+import React, { useEffect, useState } from 'react';
+import AnimatedCursor from "react-animated-cursor";
 
+const Cursor = () => {
+  // State to track screen width
+  const [isMobile, setIsMobile] = useState(false);
 
-import React, { useEffect,useRef } from 'react';
-// import "./Cursor.css"
-import AnimatedCursor from "react-animated-cursor"
+  useEffect(() => {
+    // Function to update the screen width state
+    const checkScreenWidth = () => {
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
 
-const Cursor=()=>{
-return(
+    // Initial check
+    checkScreenWidth();
+
+    // Event listener to update state on window resize
+    window.addEventListener('resize', checkScreenWidth);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener('resize', checkScreenWidth);
+    };
+  }, []);
+
+  // Don't render the cursor component if the device is mobile
+  if (isMobile) {
+    return null;
+  }
+
+  return (
     <div className="App">
-    <AnimatedCursor
-      innerSize={12}
-      outerSize={40}
-      color='59, 153, 159'
-      outerAlpha={0.5}
-      innerScale={0.7}
-      outerScale={3}
-      
-       outerStyle={{
-          background: 'linear-gradient(135deg, #8fd1d6 50%, #8fd1d6 60%)',  // Gradient effect
-          borderRadius: '50% ',       // Make the outer cursor a circle
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={40}
+        color='59, 153, 159'
+        outerAlpha={0.5}
+        innerScale={0.7}
+        outerScale={3}
+        outerStyle={{
+          background: 'linear-gradient(135deg, #8fd1d6 50%, #8fd1d6 60%)', // Gradient effect
+          borderRadius: '50%' // Make the outer cursor a circle
         }}
         innerStyle={{
-          border: '2px solid #3B999F',  // Solid border for inner circle
-          borderRadius: '50%',         // Make the inner cursor a circle
+          border: '2px solid #3B999F', // Solid border for inner circle
+          borderRadius: '50%' // Make the inner cursor a circle
         }}
-      clickables={[
-        // 'a',
-        // 'input[type="text"]',
-        // 'input[type="email"]',
-        // 'input[type="number"]',
-        // 'input[type="submit"]',
-        // 'input[type="image"]',
-        'label[for]',
-        // 'select',
-        // 'textarea',
-        // 'button',
-        // '.link',
-      ]}
-    />
-    </div>       
-)
-}
+        clickables={[
+          'label[for]',
+          // other clickable elements
+        ]}
+      />
+    </div>
+  );
+};
+
 export default Cursor;

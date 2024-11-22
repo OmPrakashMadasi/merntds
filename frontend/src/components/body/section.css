@@ -223,7 +223,19 @@ main {
     border: 2px solid transparent;
     background-clip: padding-box;
   }
-
+  @media (max-width: 767px) {
+    .flipcard-front, .flipcard-back {
+      height: 100%; 
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flipcard-front, .flipcard-back {
+      height: 100%;
+      width:100%;
+    }
+  }
   .flipcard-front::before, .flipcard-back::before {
     /* background-image: url(images/homebacground.jpeg); */
     background-image: url(../../assets/cardsImages/homebacground.jpeg);

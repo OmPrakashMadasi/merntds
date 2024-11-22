@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import logo from "../../assets/images/trishokalogonobg.png";
+import logo from "../../assets/images/trishoka.png";
 import { Link } from "react-router-dom";
 import Cursor from "../../Cursor/Cursor";
 export default function Header(props) {
@@ -23,7 +23,7 @@ export default function Header(props) {
           <Link
             to="/"
           >
-            <img src={logo} width="70px" alt="Trishoka Logo" />
+            <img src={logo} width="70px" alt="Trishoka" />
           </Link>
 
           <div class="text-center navbar-text">

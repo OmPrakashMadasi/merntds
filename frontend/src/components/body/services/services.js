@@ -81,7 +81,7 @@ export const servicesData = [
       'iOS & Android App',
       'Cross-Platform Solutions',
       'User Experience Design',
-      'Maintenance & Support',
+    
     ],
   },
   {
