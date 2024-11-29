@@ -115,7 +115,7 @@ const Servicepage = () => {
                               <h4 align="center">{serv.description}</h4>
                               <h6 align="center" style={{ color: '#3b999f' }}>{serv.description1}</h6>
                               <br />
-                              <h2 align="center" style={{ color: serv.color1, marginLeft: "-60px",color:'#3b999f' }}>
+                              <h2 align="center" style={{ color: serv.color1, marginLeft: "-60px",color:'#3b999f', }}>
                                 Offerings:
                               </h2>
                               <ul className={styles.customUl}>

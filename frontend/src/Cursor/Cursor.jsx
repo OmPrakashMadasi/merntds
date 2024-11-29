@@ -66,7 +66,7 @@ const Cursor = () => {
     <div className="App">
       <AnimatedCursor
         innerSize={12}
-        outerSize={40}
+        // outerSize={40}
         color='59, 153, 159'
         outerAlpha={0.5}
         innerScale={0.7}
