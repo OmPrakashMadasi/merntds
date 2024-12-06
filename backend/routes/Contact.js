@@ -97,7 +97,7 @@ router.post('/contactus', async (req, res) => {
     </div>
     <p style="color: #333; text-align: center; font-size: 14px;">If you have any further questions, feel free to reach out. We're here to help!</p>
 
-<p style="color: #333; text-align: center; font-size: 14px;">You are receiving this email as a confirmation of your message to Trishoka Digital Services. We appreciate your inquiry!</p>
+<p style="color: #333; text-align: center; font-size: 14px;">You are receiving this email as a confirmation of your message to Trishoka Digital Services. We appreciate your Enquiry!</p>
 
     <p style="font-size: 12px; color: #555;">
     
