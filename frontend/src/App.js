@@ -54,6 +54,8 @@ import Admin from "./components/admin";
 import Adminadd from "./components/adminadd";
 import Jobs from "./components/jobs";
 import AdminDashboard from "./components/admindashboard";
+import Graph from "./components/body/navLinksBodys/Graph/graph";
+
 
 function App() {
 
@@ -107,6 +109,10 @@ function App() {
     {
       path: '/conditionspage',
       element:<> <Header/> <Conditions/> <WhatsAppButton/> <Footer/></>
+    },
+    {
+      path: '/Company Insights',
+      element:<> <Header/> <Graph/> <WhatsAppButton/> <Footer/></>
     },
    
 

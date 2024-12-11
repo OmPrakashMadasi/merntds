@@ -74,11 +74,11 @@ router.post('/contactus', async (req, res) => {
       subject: 'Thank You for Contacting Trishoka Digital Services!',
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; width: 100%; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px;">
-  <h2 style="color: #333; text-align: center;">Thank You, &nbsp; ${name}!</h2>
-  <p style="color: #333; text-align: center;">We have received your message and will get back to you shortly.</p> 
+  <h2 style="color: #333; text-align: center;">Thank You, ${name}!</h2>
+  <p style="color: #333; text-align: center;">We have received your message & will get back to you shortly.</p> 
 
   <p style="color: #333; text-align: center;">
-    <img src="cid:template-11-11-24" alt="template-11-11-24" style="max-width: 100%; height: auto;"> 
+    <img src="cid:template-12-10-24" alt="template-12-10-24" style="max-width: 100%; height: auto;"> 
   </p>         
 
   <!-- Footer Section with Social Media Links -->
@@ -97,11 +97,16 @@ router.post('/contactus', async (req, res) => {
     </div>
     <p style="color: #333; text-align: center; font-size: 14px;">If you have any further questions, feel free to reach out. We're here to help!</p>
 
-<p style="color: #333; text-align: center; font-size: 14px;">You are receiving this email as a confirmation of your message to Trishoka Digital Services. We appreciate your Enquiry!</p>
+<p style="color: #333; text-align: center; font-size: 14px;">You are receiving this email as a confirmation of your message to TRISHOKA Digital Services. We appreciate your Enquiry!</p>
 
     <p style="font-size: 12px; color: #555;">
     
-      <img src="cid:companyLogo" alt="Trishoka Logo" style="width: 24px;"> <b> &copy; ${new Date().getFullYear()} Trishoka Digital Services </p>
+
+      <div>
+     <div style="margin-top:20px">
+      <img src="cid:companyLogo" alt="Trishoka Logo" style="width: 24px;"></div>
+      <b> &copy; ${new Date().getFullYear()} TRISHOKA Digital Services </p>
+      </div>
     </p>
   </div>        
 </div>
@@ -113,9 +118,9 @@ router.post('/contactus', async (req, res) => {
           cid: 'companyLogo'
         },
         {
-          filename: 'template-11-11-24.jpg',
-          path: './routes/assets/images/template-11-11-24.jpg', // Path to LinkedIn icon
-          cid: 'template-11-11-24'
+          filename: 'template-12-10-24.jpg',
+          path: './routes/assets/images/template-12-10-24.jpg', // Path to LinkedIn icon
+          cid: 'template-12-10-24'
         },
         {
           filename: 'twitter.png',

@@ -10,8 +10,8 @@ export default function Header(props) {
     // alert('footer component mountain')
    }, []);
 
-  const navLinks = ["Services", "Blogs", "AboutUs",
-    "Careers", "ContactUs"];
+   const navLinks = ["Services", "Blogs", "AboutUs",
+    "Careers","Company Insights", "ContactUs"];
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light ">
