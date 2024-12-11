@@ -74,7 +74,7 @@ router.post('/contactus', async (req, res) => {
       subject: 'Thank You for Contacting Trishoka Digital Services!',
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; width: 100%; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px;">
-  <h2 style="color: #333; text-align: center;">Thank You, ${name}!</h2>
+  <h2 style="color: #333; text-align: center;">Thank You,${name}!</h2>
   <p style="color: #333; text-align: center;">We have received your message & will get back to you shortly.</p> 
 
   <p style="color: #333; text-align: center;">
