@@ -118,8 +118,8 @@ router.post('/contactus', async (req, res) => {
           cid: 'companyLogo'
         },
         {
-          filename: 'template-12-10-24.jpg',
-          path: './routes/assets/images/template-12-10-24.jpg', // Path to LinkedIn icon
+          filename: 'template-12-10-24.png',
+          path: './routes/assets/images/template-12-10-24.png', // Path to LinkedIn icon
           cid: 'template-12-10-24'
         },
         {
