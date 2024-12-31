@@ -448,12 +448,6 @@ export const teamMembers = [
     additionalInfo: "Optimizes content for search engines."
   },
   {
-    name: "Mallikarjun",
-    designation: "Digital Marketing",
-    imageSrc: require('../../../assets/images/raj.jpg'),
-    additionalInfo: "Enhances brand visibility and reach."
-  },
-  {
     name: "Akhil",
     designation: "UI/UX Designer",
     imageSrc: require('../../../assets/images/akhil.jpg'),
