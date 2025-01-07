@@ -30,10 +30,10 @@ import bulb from '../../../assets/images/bulb.png';
 import knowledge from '../../../assets/images/knowledge.png'
 import quick from '../../../assets/images/quickimplementation.png'
 
-// import sneha from '../../../assets/images/sneha1.jpg';
-// import sneha1 from '../../../assets/images/sneha2.jpg';
-// import hari from '../../../assets/images/hari.jpg';
-// import raj from '../../../assets/images/raj.jpg';
+
+import hari from '../../../assets/images/hari.jpg';
+import harshith from '../../../assets/images/harshith.jpg';
+import geethika from '../../../assets/images/geethika.jpg';
 
 // const rajimage  = require('../../../assets/images/raj.jpg');
 
@@ -430,7 +430,7 @@ export const teamMembers = [
     additionalInfo: "Guides company towards success."
   },
   {
-    name: "Mounika",
+    name: "Mounika Atmakuri",
     designation: "Manager",
     imageSrc: require('../../../assets/images/mounika.jpg'),
     additionalInfo: "Coordinates tasks and resources."
@@ -442,11 +442,11 @@ export const teamMembers = [
     additionalInfo: "Manages organizational processes efficiently."
   },
   {
-    name: "Hari Krishna",
-    designation: "Digital Marketing",
-    imageSrc: require('../../../assets/images/hari.jpg'),
+    name: "Geethika",
+    designation: "Digital Marketing Executive",
+    imageSrc: require('../../../assets/images/geethika.jpg'),
     additionalInfo: "Optimizes content for search engines."
-  },
+  },  
   {
     name: "Akhil",
     designation: "UI/UX Designer",
@@ -454,16 +454,28 @@ export const teamMembers = [
     additionalInfo: "Creates intuitive user experiences"
   },
   {
+    name: "Harshith",
+    designation: "UI/UX Designer",
+    imageSrc: require('../../../assets/images/harshith.jpg'),
+    additionalInfo: "Designs user-friendly and aesthetically pleasing digital interfaces."
+  },
+  {
     name: "Om Prakash",
     designation: "Web Developer",
     imageSrc: require('../../../assets/images/op.jpg'),
-    additionalInfo: "Codes innovative web solutions effectively."
+    additionalInfo: "Codes Innovative web solutions effectively."
   },
   {
     name: "Sneha Latha",
     designation: "Web Developer",
     imageSrc: require('../../../assets/images/sneha3.jpg'),
-    additionalInfo: "Builds functional and responsive websites."
+    additionalInfo: "Develops and optimizes websites to ensure seamless performance."
+  },
+  {
+    name: "Hari Krishna",
+    designation: "Web Developer",
+    imageSrc: require('../../../assets/images/hari.jpg'),
+    additionalInfo: "Builds and maintains functional and visually appealing websites and web applications."
   },
 ];
 
