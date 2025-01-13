@@ -3,6 +3,7 @@ import styles from "./ContactUs.module.scss";
 import svs from "../../../../assets/blogImages/svslogo.jpg";
 import teamslogo from "../../../../assets/blogImages/team9logo.jpg";
 import bhonchesaraLogo from "../../../../assets/blogImages/bhonchesara.webp";
+import powertoolslogo from "../../../../assets/blogImages/powertools.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ContactUsForm from "../../../forms/ContactUsForm";
 
@@ -26,6 +27,10 @@ const ContactUs = () => {
         document.getElementById("card3").style.opacity = "1";
         document.getElementById("card3").style.transform = "translateY(0)";
       }, 1500);
+      setTimeout(() => {
+        document.getElementById("card4").style.opacity = "1";
+        document.getElementById("card4").style.transform = "translateY(0)";
+      }, 2000);
     };
 
     showCards();
@@ -91,24 +96,31 @@ const ContactUs = () => {
               </h6>
             </div>
 
-            <div className="col-md-4 mb-4 mt-4" >
+            <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4 rounded-lg ${styles.projectCard}`} id="card1">
                 <h6 className={styles.projectName}>Sri SVS Pearls & Jewellers</h6>
-                <img className="img-fluid" src={svs} alt="Sri SVS Pearls & Jewellers" style={{ width: '100%', height: 250 }} />
+                <img className="img-fluid" src={svs} alt="Sri SVS Pearls & Jewellers" style={{ width: '100%', height: 250,  }} />
               </div>
             </div>
-            <div className="col-md-4 mb-4 mt-4 ml-3" >
+            <div className="col-md-3 mb-4 mt-4 ml-3" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card2">
                 <h6 className={styles.projectName}>Bhonchesara</h6>
                 <img className="img-fluid" src={bhonchesaraLogo} alt="Bhonchesara" style={{ width: '100%', height: 250 }} />
               </div>
             </div>
-            <div className="col-md-4 mb-4 mt-4" >
+            <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card3">
                 <h6 className={styles.projectName}>Team 9 Infra</h6>
                 <img className="img-fluid" src={teamslogo} alt="Team 9 Infra" style={{ width: '100%', height: 250 }} />
               </div>
             </div>
+            <div className="col-md-3 mb-4 mt-4" >
+              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card4">
+                <h6 className={styles.projectName}>Sri Karthik Power Tools</h6>
+                <img className="img-fluid" src={powertoolslogo} alt="Team 9 Infra" style={{ width: '100%', height: 250 }} />
+              </div>
+            </div>
+            
           </div>
         </div>
 
