@@ -55,7 +55,7 @@ import Adminadd from "./components/adminadd";
 import Jobs from "./components/jobs";
 import AdminDashboard from "./components/admindashboard";
 import Graph from "./components/body/navLinksBodys/Graph/graph";
-
+import Roas from "./components/body/navLinksBodys/Roas/roas";
 
 function App() {
 
@@ -114,6 +114,10 @@ function App() {
       path: '/Company Insights',
       element:<> <Header/> <Graph/> <WhatsAppButton/> <Footer/></>
     },
+    {
+      path: '/Roas',
+      element:<> <Header/> <Roas/> <WhatsAppButton/> <Footer/></>
+    }
    
 
 

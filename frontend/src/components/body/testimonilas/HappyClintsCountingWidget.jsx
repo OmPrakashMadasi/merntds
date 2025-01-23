@@ -44,7 +44,7 @@ const HappyClients = () => {
             </div>
             <h2>
               {inView && (
-                <CountUp start={0} end={1000} duration={3} separator="," />
+                <CountUp start={0} end={522} duration={3} separator="," />
               )}
               +
             </h2>
