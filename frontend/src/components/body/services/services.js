@@ -33,7 +33,7 @@ import quick from '../../../assets/images/quickimplementation.png'
 
 import hari from '../../../assets/images/hari.jpg';
 import harshith from '../../../assets/images/harshith.jpg';
-import geethika from '../../../assets/images/geethika.jpg';
+
 
 // const rajimage  = require('../../../assets/images/raj.jpg');
 
@@ -440,12 +440,6 @@ export const teamMembers = [
     designation: "Administrative",
     imageSrc: require('../../../assets/images/v.jpg'),
     additionalInfo: "Manages organizational processes efficiently."
-  },
-  {
-    name: "Geethika",
-    designation: "Digital Marketing Executive",
-    imageSrc: require('../../../assets/images/geethika.jpg'),
-    additionalInfo: "Optimizes content for search engines."
   },  
   {
     name: "Akhil",
