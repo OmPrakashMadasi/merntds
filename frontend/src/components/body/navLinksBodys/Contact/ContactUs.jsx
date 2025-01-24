@@ -142,7 +142,7 @@ const ContactUs = () => {
             <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card4">
                 <h6 className={styles.projectName}>Orison</h6>
-                <img className="img-fluid" src={orisonlogo} alt="Pickles Platter" style={{ width: '100%', height: 200 }} />
+                <img className="img-fluid" src={orisonlogo} alt="Orison" style={{ width: '100%', height: 200 }} />
               </div>
             </div>
             
@@ -162,19 +162,19 @@ const ContactUs = () => {
             <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card7">
                 <h6 className={styles.projectName}>Sri Karthik Power Tools</h6>
-                <img className="img-fluid" src={powertoolslogo} alt="Team 9 Infra" style={{ width: '100%', height: 200 }} />
+                <img className="img-fluid" src={powertoolslogo} alt="Sri Karthik Power Tools" style={{ width: '100%', height: 200 }} />
               </div>
             </div>
             <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card8">
                 <h6 className={styles.projectName}>Forest Mandi</h6>
-                <img className="img-fluid" src={forestmandilogo} alt="Team 9 Infra" style={{ width: '100%', height: 200 }} />
+                <img className="img-fluid" src={forestmandilogo} alt="Forest Mandi" style={{ width: '100%', height: 200 }} />
               </div>
             </div>
             <div className="col-md-3 mb-4 mt-4" >
               <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card9">
                 <h6 className={styles.projectName}>Cinematic Universe Mandi</h6>
-                <img className="img-fluid" src={cinematicmandilogo} alt="Team 9 Infra" style={{ width: '100%', height: 200 }} />
+                <img className="img-fluid" src={cinematicmandilogo} alt="Cinematic Universe Mandi" style={{ width: '100%', height: 200 }} />
               </div>
             </div>
             
