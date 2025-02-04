@@ -3,6 +3,10 @@ import styles from "./Careers.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CareersForm from "../../../careersforms/Careersform";
 import { jobs } from "../../services/services";
+import { Carousel } from "react-bootstrap";
+import uiuxdesign from "../../../../assets/careersImages/uiux.jpg";
+import webdevelopment from "../../../../assets/careersImages/web.jpg";
+import digitalmarketing from "../../../../assets/careersImages/digital.jpg";
 const Careers = () => {
   const [jobs, setJobs] = useState([]); // State to store job data
   const [loading, setLoading] = useState(true); // Loading state
@@ -59,7 +63,7 @@ const Careers = () => {
       </div>
     );
   }
-
+ 
   if (error) {
     return (
       <div className="alert alert-danger" role="alert">
@@ -178,6 +182,55 @@ const Careers = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* Carousel Section using React Bootstrap */}
+      <div className="container">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={uiuxdesign}
+              alt="Trishoka Creative Process"
+              style={{ height: '600px', objectFit: 'cover' }}
+            />
+            <Carousel.Caption className="bottom-0">
+              <h3>A career in UI/UX</h3>
+              <p className="text-black" >
+                Focuses on the visual elements and interactive aspects of a product. UI designers create the look and feel, including typography, color schemes, button styles, and overall layout. The goal is to make the interface visually appealing, intuitive, and easy to use. Focuses on the entire user journey and how they interact with a product. UX designers conduct user research, create user personas, develop information architecture, and design user flows. The goal is to create a positive and seamless experience for the user, ensuring they can easily achieve their goals.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+ 
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={webdevelopment}
+              alt="Creative Process in Marketing"
+              style={{ height: '600px', objectFit: 'cover' }}
+            />
+            <Carousel.Caption className="bottom-0">
+              <h3>A Career in Marketing</h3>
+              <p className="text-black">
+                Marketing is one of the most popular career destinations for newly qualified graduates. Marketing is concerned with identifying consumer demand relative to a product or service and developing ways in which consumers can purchase these in the optimum amounts to make your company profitable. This involves analysing market research, distribution, product design, place (i.e., where to sell it), pricing, and promotion – also known as the 4 ‘Ps’.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+ 
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={digitalmarketing}
+              alt="Trishoka Creative Process"
+              style={{ height: '600px', objectFit: 'cover' }}
+            />
+            <Carousel.Caption className="bottom-0">
+              <h3>A Career in Web Development</h3>
+              <p className="text-black">
+                Work with clients or project managers to determine the needs and goals of a website or application. Design website architecture and develop website layout/user interface using standard HTML/CSS practices. Create and test applications for websites. Write well-designed, efficient, and testable code using best software development practices. Integrate data from various back-end services and databases.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </div>
   );

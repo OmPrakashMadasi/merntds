@@ -1,9 +1,9 @@
 import React from "react";
 
-// Register required Chart.js modules
+
 
 const Roas = () => {
-  // Sample data: Replace with your actual ROAS data
+  
 
 
   return (
@@ -99,7 +99,7 @@ const Roas = () => {
         alt="Maximize ROAS with Trishoka"
         style={{
           width: "100%",  // Make the image width responsive
-          maxWidth: "400px",  // Limit the maximum width of the image
+          maxWidth: "500px",  // Limit the maximum width of the image
           height: "auto",  // Maintain aspect ratio
           borderRadius: "8px",  // Optional: Rounded corners
           // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",  // Optional: Shadow effect
@@ -138,7 +138,7 @@ const Roas = () => {
   
   
   
-        {/* ROI Explanation */}
+        {/* ROAS Explanation */}
         <div style={{ lineHeight: "1.8", color: "#333", marginBottom: "40px" }}>
           <h3 style={{ color: "#3B999F" }}>How to Calculate ROAS:</h3>
           <p style={{ color: "black" }}>
@@ -161,7 +161,7 @@ const Roas = () => {
           </p>
         </div>
   
-     {/* ROI-Driven Approach Cards */}
+     {/* ROAS-Driven Approach Cards */}
 <h3 style={{ textAlign: "center", color: "#3B999F", marginBottom: "20px" }}>
   ROAS-Driven Services by Trishoka
 </h3>
@@ -255,7 +255,7 @@ const Roas = () => {
           <h3 style={{ color: "#3B999F", marginBottom: "10px" }}>Partner with Trishoka for Better ROAS</h3>
           <p style={{ color: "black", lineHeight: "1.6" }}>
             {/* Your success is our priority. Let us show you how Trishoka’s services can transform your investments
-            into substantial returns. Contact us now for a free consultation and ROI assessment. */}
+            into substantial returns. Contact us now for a free consultation and ROAS assessment. */}
             Your success is not just our priority—it’s our mission. Experience the power of transformative growth as Trishoka cutting edge services propel your investment towards remarkable returns. Let us help you unlock unparalleled potential and achieve extraordinary results.
   <b style={{color:"black"}}>Contact us</b> today for a complimentary consultation and a comprehensive ROAS assessment. Together, we’ll pave the way to a future of limitless possibilities.
           </p>
