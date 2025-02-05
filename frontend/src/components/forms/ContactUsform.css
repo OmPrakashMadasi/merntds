@@ -322,7 +322,7 @@ textarea::placeholder {
 /* Button to toggle form visibility */
 .toggleButton {
   position: fixed;
-  bottom: 20px;
+  bottom: -5px;
   right: 20px;
   background-color: #3b999f;
   border: none;
