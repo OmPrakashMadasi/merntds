@@ -7,11 +7,6 @@ import { Link } from "react-router-dom";
 
 export default function ServiceCards() {
 
-  // const navigate = useNavigate(); // Get the navigate function
-
-  // const handleContactClick = () => {
-  //   navigate('/ContactUs'); // Navigate to the Contact Us page
-  // };
 
   return (
     <div className="fontfamily">

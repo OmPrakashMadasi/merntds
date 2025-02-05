@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./ContactUsform.css"; // Ensure this file exists for styling
-import { ArrangeVerticalCircle } from 'iconsax-react';
+import "./ContactUsform.css"; // Import external CSS file
 import axios from 'axios';
 
 const ContactUsForm = () => {
@@ -40,23 +39,19 @@ const ContactUsForm = () => {
     e.preventDefault();
     if (isFormValid) {
       try {
-        // Send form data to backend API
         await axios.post(`${process.env.REACT_APP_API_URL}/api/contactus`, formData);
 
-        // Set success message and show modal
         setModalMessage("Message sent successfully!");
         setIsModalVisible(true);
-  
-        // Reset the form after submission
         resetForm();
       } catch (error) {
-        console.error("There was an error sending the message:", error);
+        console.error("Error submitting the form:", error);
         setModalMessage("There was an issue submitting the form. Please try again.");
-        setIsModalVisible(true); // Show modal on error
+        setIsModalVisible(true);
       }
     }
   };
-  
+
   const resetForm = () => {
     setFormData({
       name: "",
@@ -64,47 +59,25 @@ const ContactUsForm = () => {
       mobile_number: "",
       message: "",
     });
-    setIsFormValid(false); // Disable the submit button until the form is valid
+    setIsFormValid(false);
   };
 
   const toggleFormVisibility = () => {
     setIsFormVisible((prev) => !prev);
-    if (isFormVisible) {
-      resetForm(); // Reset form when closing
-    }
+    if (isFormVisible) resetForm();
   };
 
   const closeModal = () => {
-    setIsModalVisible(false); // Close the modal and reset form
-    resetForm(); // Refresh the form after closing the modal
+    setIsModalVisible(false);
+    resetForm();
   };
 
   return (
     <div>
-      {/* Button to toggle form visibility */}
-      <button
-        onClick={toggleFormVisibility}
-        className="toggleButton"
-        style={{
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          backgroundColor: '#3B999F',
-          border: 'none',
-          borderRadius: '50%',
-          width: '50px',
-          height: '50px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          cursor: 'pointer',
-          boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)',
-        }}
-      >
-        <span style={{ color: '#fff', fontSize: '25px' }}>✉️</span>
+      <button onClick={toggleFormVisibility} className="toggleButton">
+        <span className="toggleButtonIcon">✉️</span>
       </button>
 
-      {/* Full-screen Modal for success/error messages */}
       {isModalVisible && (
         <div className="modalOverlay">
           <div className="modalContent">
@@ -116,10 +89,9 @@ const ContactUsForm = () => {
         </div>
       )}
 
-      {/* Contact Form */}
       {isFormVisible && (
-        <div className="formSection shadow" role="dialog" aria-modal="true">
-          <h2 style={{ fontFamily: "Algerian, sans-serif" }}>Write us</h2>
+        <div className="formSection" role="dialog" aria-modal="true">
+          <h2 className="formTitle">Write us</h2>
           <form onSubmit={handleSubmit}>
             <div className="formGroup">
               <input
@@ -169,23 +141,11 @@ const ContactUsForm = () => {
               type="submit"
               className={`submitButton ${isFormValid ? "enabled" : "disabled"}`}
               disabled={!isFormValid}
-              style={{ cursor: "pointer" }}
             >
               SEND MESSAGE
             </button>
           </form>
-          <button
-            type="button"
-            className="closeButton"
-            onClick={toggleFormVisibility}
-            aria-label="Close"
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: '24px',
-            }}
-          >
+          <button type="button" className="closeButton" onClick={toggleFormVisibility} aria-label="Close">
             &times;
           </button>
         </div>

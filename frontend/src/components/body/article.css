@@ -301,3 +301,267 @@
 }
 
 
+/* FlipCards.css */
+
+/* Flipcard container styles */
+.flipcard-container {
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.flipcard {
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flipcard:hover {
+  transform: rotateY(180deg);
+}
+
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flipcard-front,
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  font-family: system-ui;
+}
+
+.flipcard-front {
+  background-color: #333;
+  color: white;
+}
+
+.flipcard-back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Styling for the content inside the flipcard front */
+.flipcard-front img {
+  width: 80px;
+}
+
+.flipcard-front h2,
+.flipcard-front p {
+  font-family: system-ui;
+}
+
+/* Styling for the list on the back of the flipcard */
+.flipcard-back ul {
+  color: white;
+  font-family: system-ui;
+  text-align: left;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.flipcard-back ul li {
+  margin-bottom: 10px;
+}
+
+/* Learn More button styles */
+.flipcard-back .btn-primary {
+  font-family: system-ui;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.flipcard-back .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Ensure the flip card is responsive */
+.flipcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 100%; /* Ensure it occupies available height */
+}
+
+.flipcard {
+  width: 100%;
+  max-width: 300px;  /* Adjust the card width */
+  height: 400px; /* Define a fixed height for the card */
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipcard-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensures the text is centered inside the flipcard */
+.flipcard-front, .flipcard-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.flipcard-front {
+  background-color: #3b999f;
+  color: white;
+}
+
+.flipcard-back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+/* Ensure the title and description inside the card are centered */
+.flipcard-front h2, .flipcard-back h2 {
+  margin-bottom: 15px;
+  font-family: system-ui;
+  text-align: center;
+}
+
+.flipcard-front p, .flipcard-back p {
+  font-family: system-ui;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.flipcard-back ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-left: 20px;
+  font-family: system-ui;
+}
+
+/* Button Styles */
+.btn {
+  background-color: rgb(92, 171, 202);
+  color: white;
+  font-family: system-ui;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5b9dba;
+}
+
+
+
+
+
+/* Stories.css */
+
+/* Inside Stories Section */
+.inside-stories {
+  padding: 50px;
+  text-align: center;
+}
+
+.inside-stories h2 {
+  font-family: system-ui;
+  font-size: 2rem;
+}
+
+/* Stories Container */
+.stories-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Story Left Box */
+.story-left {
+  flex: 1;
+  text-align: left;
+}
+
+.story-left img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.story-left h3 {
+  font-family: system-ui;
+  font-size: 1.5rem;
+}
+
+.story-left h6 {
+  font-family: system-ui;
+  color: #3b999f;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 1rem;
+}
+
+/* Story Column Section */
+.story-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.story-column .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-column .story img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.story-column .story h3 {
+  font-family: system-ui;
+  font-size: 1.5rem;
+}
+
+.story-column .story h6 {
+  font-family: system-ui;
+  color: #3b999f;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1rem;
+}
+

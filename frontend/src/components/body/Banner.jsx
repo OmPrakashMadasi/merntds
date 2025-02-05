@@ -34,7 +34,8 @@ const Banner = () => {
         {/* <p>Transform your online presence with </p>
         <h1>Cutting-Edge Digital Marketing & IT services</h1> */}
          {showContent && (
-        <><h5 style={{ fontFamily: 'system-ui' }}>!!We Create Unique and Efficient Digital Service</h5><h1>
+        <><h5 style={{ fontFamily: 'system-ui' }}>!!We Create Unique and Efficient Digital Service</h5>
+        <h1>
             <Link
               to="/Services"
               className="btn"
