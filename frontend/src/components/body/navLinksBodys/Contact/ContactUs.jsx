@@ -117,7 +117,10 @@ const ContactUs = () => {
             <div className="container text-center d-flex flex-column align-items-center justify-content-center" style={{ marginTop: 30 }}>
               <h2 className={styles.sectionHeader}>Our Clients</h2>
               <h6 className="px-3 mt-2" style={{ fontFamily: "system-ui", color: "black" }}>
-                We are happy to assist you in providing comprehensive services, a dedicated team of professionals who are committed to going the extra mile for you, around the clock, to enhance your experience with unwavering efficiency.
+              We are happy to assist you in providing comprehensive services, a dedicated team of professionals who are committed to going the extra mile for you, around the clock, to enhance your experience with unwavering efficiency.  
+Our goal is to ensure seamless support tailored to your needs, delivering excellence at every step.  
+With our expertise and dedication, we strive to exceed expectations and build lasting relationships.  
+
               </h6>
             </div>
 
