@@ -1,125 +1,92 @@
-/* Container Styles */
+/* Roas.css */
 .container {
-  max-width: 400px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* margin: 20px; */
   font-family: Arial, sans-serif;
-  position: relative;
-  left: 0; /* Start from the left */
-  animation: slideIn 1.5s ease-in-out forwards; /* Animation */
+  padding: 20px;
 }
 
-/* Animation for container sliding in */
-@keyframes slideIn {
-  0% {
-    left: -400px; /* Offscreen */
-    opacity: 0;
-  }
-  100% {
-    left: 0; /* Final position */
-    opacity: 1;
-  }
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
 }
 
-/* Header Styles */
-h1 {
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.content {
+  flex: 1 1 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  color: #3B999F;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: black;
+  line-height: 1.6;
+}
+
+.ul {
+  color: black;
+  line-height: 1.8;
+  list-style-type: "→";
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.explanation {
+  line-height: 1.8;
   color: #333;
-  font-size: 24px;
-  text-align: left;
-  margin-bottom: 20px;
-  position: relative;
-  animation: fadeIn 1.2s ease-in-out;
+  margin-bottom: 40px;
 }
 
-/* Fade-in animation for header */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.card {
+  flex: 1 1 300px;
+  padding: 20px;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  /* background-color: #F4F8FB; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Group */
-.form-group {
-  margin-bottom: 15px;
+.card-heading {
+  color: #3B999F;
+  margin-bottom: 10px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+.card-subheading {
+  color: #3B999F;
   font-size: 16px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input focus effect */
-input:focus {
-  border-color: #3b999f;
-  box-shadow: 0 0 8px rgba(59, 153, 159, 0.3);
-  outline: none;
-}
-
-/* Button Styles */
-button {
-  width: 100%;
-  background-color: #3b999f;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Button hover effect */
-button:hover {
-  background-color: #317a80;
-  transform: scale(1.05); /* Slightly enlarge the button */
-}
-
-/* Result Section */
-.result {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  animation: bounceIn 1s ease-in-out;
-}
-
-/* Bounce-in animation for result */
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Success and Error Styles */
-.result.success {
-  color: #28a745;
-}
-.result.error {
-  color: red;
+.cta {
+  background-color: #F4F8FB;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }

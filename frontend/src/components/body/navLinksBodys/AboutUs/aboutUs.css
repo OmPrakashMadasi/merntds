@@ -93,3 +93,104 @@
 .hover-card:hover p {
   color: #257e81;
 }
+
+
+
+
+/* Add this to your aboutUs.css file */
+
+.partnership-container {
+  /* You can add styles here if needed */
+}
+
+.about-heading {
+  text-align: center;
+  margin-left: 15%;
+  width: 70%;
+  font-family: system-ui;
+  font-size: 40px;
+}
+
+.about-subheading {
+  text-align: center;
+  margin-left: 20%;
+  width: 55%;
+  font-family: system-ui;
+  margin-top: 20px;
+}
+
+.container {
+  padding-top: 30px;
+  /* background-color: whitesmoke; */
+  margin-top: 30px;
+}
+
+.row {
+  /* Row-specific styles can go here */
+}
+
+.card {
+  border-radius: 15px;
+  height: 100%;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.card-body {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.count-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.count-icon-container h2 {
+  margin-right: 10px;
+  color: black;
+}
+
+.count-icon-container img {
+  width: 30%;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.tech-description {
+  color: black;
+}
+
+.tech-title {
+  font-size: 24px;
+  font-family: system-ui;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-content:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-contact {
+  background-color: rgb(92, 171, 202);
+  color: white;
+  font-family: system-ui;
+}

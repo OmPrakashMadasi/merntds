@@ -1,34 +1,31 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./Header.css"; // Make sure your CSS file includes the necessary style
 import logo from "../../assets/images/trishoka.png";
 import { Link } from "react-router-dom";
 import Cursor from "../../Cursor/Cursor";
+
 export default function Header(props) {
 
   useEffect(() => {
-      
     // alert('footer component mountain')
-   }, []);
+  }, []);
 
-   const navLinks = ["Services", "Blogs", "AboutUs",
-    "Careers","Company Insights", "ROAS", "ContactUs"];
+  const navLinks = ["Services", "Blogs", "AboutUs", "Careers", "Company Insights", "ROAS", "ContactUs"];
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="container-fluid" style={{ marginLeft: '4%' }}>
-          {/* <a className="navbar-brand" href="navbar.html">
-            <img src={logo} width="70px" alt="Trishoka Logo" />
-          </a> */}
-
-          <Link
-            to="/"
-          >
+          <Link to="/">
             <img src={logo} width="70px" alt="Trishoka" />
           </Link>
 
-          <div class="text-center navbar-text">
-            <h1 class="mb-2" style={{ fontFamily: 'system-ui' }}>TRISHOKA</h1>
-            <p class="mb-0" style={{ fontFamily: 'system-ui' }}>Digital Services</p>
+          <div className="text-center navbar-text">
+            <h1 className="mb-2" style={{ fontFamily: 'system-ui' }}>TRISHOKA</h1>
+            <p className="mb-0" style={{ fontFamily: 'system-ui', whiteSpace: 'nowrap' }}>
+              Digital Services
+            </p>
+
           </div>
 
           <button
@@ -61,7 +58,7 @@ export default function Header(props) {
               {navLinks.map((navlink, index) => {
                 return (
                   <li className="nav-item" key={index}>
-                    <Link className="nav-link" to={`/${navlink}`} style={{ fontFamily: 'system-ui' }}>
+                    <Link className="nav-link" to={`/${navlink.toLowerCase()}`} style={{ fontFamily: 'system-ui' }}>
                       {navlink}
                     </Link>
                   </li>
