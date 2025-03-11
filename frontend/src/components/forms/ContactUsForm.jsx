@@ -46,7 +46,9 @@ const ContactUsForm = () => {
         resetForm();
       } catch (error) {
         console.error("Error submitting the form:", error);
-        setModalMessage("There was an issue submitting the form. Please try again.");
+        setModalMessage(
+          error.response?.data?.message || "There was an issue submitting the form. Please try again."
+        );
         setIsModalVisible(true);
       }
     }
@@ -117,7 +119,7 @@ const ContactUsForm = () => {
             </div>
             <div className="formGroup">
               <input
-                type="text"
+                type="tel"
                 name="mobile_number"
                 placeholder="Phone Number"
                 maxLength={10}

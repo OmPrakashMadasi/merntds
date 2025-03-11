@@ -39,23 +39,23 @@ const ContactUs = () => {
       setTimeout(() => {
         document.getElementById("card5").style.opacity = "1";
         document.getElementById("card5").style.transform = "translateY(0)";
-      }, 2000);
+      }, 2500);
       setTimeout(() => {
         document.getElementById("card6").style.opacity = "1";
         document.getElementById("card6").style.transform = "translateY(0)";
-      }, 2000);
+      }, 3000);
       setTimeout(() => {
         document.getElementById("card7").style.opacity = "1";
         document.getElementById("card7").style.transform = "translateY(0)";
-      }, 2000);
+      }, 3500);
       setTimeout(() => {
         document.getElementById("card8").style.opacity = "1";
         document.getElementById("card8").style.transform = "translateY(0)";
-      }, 2000);
+      }, 4000);
       setTimeout(() => {
         document.getElementById("card9").style.opacity = "1";
         document.getElementById("card9").style.transform = "translateY(0)";
-      }, 2000);
+      }, 4500);
     };
 
     showCards();
@@ -90,7 +90,7 @@ const ContactUs = () => {
     tabIndex="-1"
     role="dialog"
     aria-labelledby="contactModalLabel"
-    aria-hidden="true"
+    aria-hidden={!showModal}
   >
     <div
       className="modal-dialog"
