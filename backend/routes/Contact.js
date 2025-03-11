@@ -153,7 +153,7 @@ router.post('/contactus', async (req, res) => {
 
   } catch (error) {
     console.error('Error processing contact form:', error);
-    res.status(500).json({ message: 'There was an issue submitting the form. Please try again.' });
+    res.status(500).json({ message: 'Server error: ' + error.message });
   }
 });
 
