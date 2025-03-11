@@ -14,7 +14,7 @@ const corsOptions = {
     'https://trishoka.com',      // Without www
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Customize methods as needed
-  allowedHeaders: ['Content-Type', 'Authorization'], // Customize headers as needed
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'], // Customize headers as needed
 };
 
 app.use(cors(corsOptions));
