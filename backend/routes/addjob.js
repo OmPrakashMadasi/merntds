@@ -31,17 +31,18 @@ router.post('/addjob', async (req, res) => {
 });
 
 // Middleware to check API key
-const requireApiKey = (req, res, next) => {
-    const apiKey = req.headers['x-api-key'];
-    if (apiKey && apiKey === process.env.API_KEY) {
-      next();
-    } else {
-      res.status(403).json({ message: 'Unauthorized access' });
-    }
-  };
+// const requireApiKey = (req, res, next) => {
+//     const apiKey = req.headers['x-api-key'];
+//     if (apiKey && apiKey === process.env.API_KEY) {
+//       next();
+//     } else {
+//       res.status(403).json({ message: 'Unauthorized access' });
+//     }
+//   };
 
 // Fetch all job listings
-router.get('/jobs', requireApiKey, async (req, res) => {
+// router.get('/jobs', requireApiKey, async (req, res) => {
+    router.get('/jobs', requireApiKey, async (req, res) => {
     try {
         const jobs = await Job.find();
         res.setHeader('Content-Type', 'application/json'); // Explicitly set JSON response
