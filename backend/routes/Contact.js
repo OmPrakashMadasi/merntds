@@ -168,7 +168,7 @@ const requireApiKey = (req, res, next) => {
 };
 
 // Route to fetch all contact form submissions
-router.get('/contactus', async (req, res) => {
+router.get('/contactus', requireApiKey, async (req, res) => {
   try {
     const contacts = await Contact.find();
     res.status(200).json(contacts);
