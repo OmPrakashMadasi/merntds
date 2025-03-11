@@ -42,7 +42,7 @@ router.post('/addjob', async (req, res) => {
 
 // Fetch all job listings
 // router.get('/jobs', requireApiKey, async (req, res) => {
-    router.get('/jobs', requireApiKey, async (req, res) => {
+    router.get('/jobs', async (req, res) => {
     try {
         const jobs = await Job.find();
         res.setHeader('Content-Type', 'application/json'); // Explicitly set JSON response
