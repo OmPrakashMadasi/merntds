@@ -157,6 +157,16 @@ router.post('/contactus', async (req, res) => {
   }
 });
 
+// Middleware to check API key
+const requireApiKey = (req, res, next) => {
+  const apiKey = req.headers['x-api-key'];
+  if (apiKey && apiKey === process.env.API_KEY) {
+    next();
+  } else {
+    res.status(403).json({ message: 'Unauthorized access' });
+  }
+};
+
 // Route to fetch all contact form submissions
 router.get('/contactus', async (req, res) => {
   try {

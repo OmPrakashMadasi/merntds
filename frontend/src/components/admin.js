@@ -43,10 +43,20 @@ function Admin() {
     if (isAuthenticated) {
       async function fetchContacts() {
         try {
-          const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/contactus`);
+          const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/contactus`, {
+            headers: {
+              'x-api-key': process.env.REACT_APP_API_KEY,
+            },
+
+        });
           setContacts(response.data);
         } catch (error) {
-          console.error("Error fetching contact data:", error);
+          console.error("Error fetching contact data:", {
+            message: error.message,
+            status: error.response?.status,
+            data: error.response?.data,
+          });
+          alert("Failed to fetch contacts. Check console for details.");
         }
       }
       fetchContacts();
