@@ -45,7 +45,7 @@ const ContactUsForm = () => {
         setIsModalVisible(true);
         resetForm();
       } catch (error) {
-        console.error("Error submitting the form:", error);
+        // console.error("Error submitting the form:", error);
         setModalMessage(
           error.response?.data?.message || "There was an issue submitting the form. Please try again."
         );
