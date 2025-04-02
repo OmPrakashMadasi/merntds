@@ -19,6 +19,7 @@ footer{
 .social_box {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   max-width: 100px;
   margin-top: 10px;
 }

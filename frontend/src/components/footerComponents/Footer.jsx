@@ -44,6 +44,9 @@ export default function Footer() {
               <a href="https://x.com/TrishokaDigital" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter social-icon" aria-hidden="true" style={{ color: "white" }}></i>
               </a>
+              <a href="https://www.youtube.com/@Trishokadigitalservices" target="_blank" rel="noopener noreferrer">
+  <i className="fab fa-youtube social-icon" aria-hidden="true" style={{ color: "white" }}></i>
+</a>
 
             </div>
           </div>
