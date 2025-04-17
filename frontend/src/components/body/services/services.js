@@ -253,7 +253,7 @@ export const servicesNavData = [
     imageSrc: digitalmarketing,
     description: "Understanding Digital Marketing",
     description1:
-      "We leverage the full potential of Digital Marketing to forge powerful connections between brands and their ideal audience. Our innovative strategies amplify your reach, ensuring your brand resonates and thrives in the digital age.",
+      "We leverage the full potential of Digital Marketing to forge powerful connections between brands and their ideal audience. Through our digital marketing services in LB Nagar, our innovative strategies amplify your reach, ensuring your brand resonates and thrives in the digital age.",
     offerings: ["Market Expansion", "Market Expansion Strategies", "Partnership and Affiliate Programs", " Innovation & Product Design Services",
       "Social Media Engagement and Advertising"],
     imgalt: "digital marketing service",

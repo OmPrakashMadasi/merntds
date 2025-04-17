@@ -23,8 +23,9 @@ export default function ServiceCards() {
           <div className="service-description">
             <br />
             <p align="center" style={{fontFamily:'system-ui'}}>
-              We provide a wide range of services to cater to your needs,
-              ensuring High Performance, Scalability and Security.
+            We provide a wide range of services to cater to your needs, 
+            offering the best digital marketing services in Hyderabad while ensuring High Performance,
+             Scalability and Security.
             </p>
           </div>
         </div>
