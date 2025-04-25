@@ -12,7 +12,8 @@ const WhatsAppButton = () => {
       }}
     >
       <a
-        href="https://wa.me/919550590693?text=Hello%2C%20I'm%20interested%20in%20your%20Organization's%20Digital%20Services%21"
+        href="https://wa.me/919493401014?"
+        // href="https://wa.me/919493401014?text=Hello%2C%20I'm%20interested%20in%20your%20Organization's%20Digital%20Services%21"
         target="_blank"
         rel="noopener noreferrer"
       >

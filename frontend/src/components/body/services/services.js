@@ -427,13 +427,13 @@ export const teamMembers = [
     name: "Koushik Naidu",
     designation: "Managing Director",
     imageSrc: require('../../../assets/images/md.jpg'),
-    additionalInfo: "Guides company towards success."
+    additionalInfo: "Guides Company towards success."
   },
   {
     name: "Pruthvi",
     designation: "Technical Head",
     imageSrc: require('../../../assets/images/pruthvi.jpg'),
-    additionalInfo: "Leads technical projects and teams."
+    additionalInfo: "Leads Technical projects and teams."
   },
   {
     name: "Vrushvini",
@@ -442,14 +442,14 @@ export const teamMembers = [
     additionalInfo: "Manages organizational processes efficiently."
   },
   {
-    name: "Vijay",
-    designation: "Digital Marketing",
+    name: "Vijay Yeddula",
+    designation: "Digital Marketing Executive",
     imageSrc: require('../../../assets/images/vijay.jpg'),
     additionalInfo: "Expert in digital marketing strategies."
   },
   {
     name: "Karthik",
-    designation: "Digital Marketing",
+    designation: "Digital Marketing Executive",
     imageSrc: require('../../../assets/images/karthik.jpg'),
     additionalInfo: "Specializes in online marketing strategies."
   },  
