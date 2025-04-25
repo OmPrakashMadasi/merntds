@@ -430,16 +430,28 @@ export const teamMembers = [
     additionalInfo: "Guides company towards success."
   },
   {
-    name: "Mounika Atmakuri",
-    designation: "Manager",
-    imageSrc: require('../../../assets/images/mounika.jpg'),
-    additionalInfo: "Coordinates tasks and resources."
+    name: "Pruthvi",
+    designation: "Technical Head",
+    imageSrc: require('../../../assets/images/pruthvi.jpg'),
+    additionalInfo: "Leads technical projects and teams."
   },
   {
     name: "Vrushvini",
-    designation: "Administrative",
+    designation: "Assistant Manager",
     imageSrc: require('../../../assets/images/v.jpg'),
     additionalInfo: "Manages organizational processes efficiently."
+  },
+  {
+    name: "Vijay",
+    designation: "Digital Marketing",
+    imageSrc: require('../../../assets/images/vijay.jpg'),
+    additionalInfo: "Expert in digital marketing strategies."
+  },
+  {
+    name: "Karthik",
+    designation: "Digital Marketing",
+    imageSrc: require('../../../assets/images/karthik.jpg'),
+    additionalInfo: "Specializes in online marketing strategies."
   },  
   {
     name: "Akhil",
@@ -452,6 +464,12 @@ export const teamMembers = [
     designation: "UI/UX Designer",
     imageSrc: require('../../../assets/images/harshith.jpg'),
     additionalInfo: "Designs user-friendly and aesthetically pleasing digital interfaces."
+  },
+  {
+    name: "Meghana",
+    designation: "UI/UX Designer",
+    imageSrc: require('../../../assets/images/meghana.jpg'),
+    additionalInfo: "Creates user-centered designs for digital products."
   },
   {
     name: "Om Prakash",
