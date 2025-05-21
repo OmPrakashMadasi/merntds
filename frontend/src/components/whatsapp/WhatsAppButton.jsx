@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
       className="whatsapp-button-container"
       style={{
         position: 'fixed',
-        bottom: '20px',
+        bottom: '80px',
         right: '20px',
         zIndex: 1000,
       }}
