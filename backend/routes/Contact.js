@@ -30,9 +30,12 @@ router.post('/contactus', async (req, res) => {
         //  Send data to Google Sheet via Apps Script Web App
     const googleSheetData = { name, email, mobile_number, message };
 
-    await axios.post("https://script.google.com/macros/s/AKfycbxH6nGGTWAhyBjMn9Sxypl5YebuTHLUhHgdx-1UV5t6v7cYmdzxXlbGHqzIXix7XyP9/exec", googleSheetData)
-
-
+    try {
+      await axios.post("https://script.google.com/macros/s/AKfycbwb5wH4yyfXNK5MRsWk5KpE_HEqp0p8DdtF_0sv30mxY53a0PMCdvmhcXHrg6hbi9hF/exec", googleSheetData);
+      console.log('Data sent to Google Sheets successfully');
+    } catch (gsError) {
+      console.error('Error sending data to Google Sheets:', gsError.response ? gsError.response.data : gsError.message);
+    }
     router.get('/', (req, res) => {
       res.send('Contact route working');
     });
