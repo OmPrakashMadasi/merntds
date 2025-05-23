@@ -35,9 +35,12 @@ const ContactUsForm = () => {
     setIsFormValid(validateForm(updatedData));
   };
 
+  const [loading, setLoading] = useState(false); // Add this state
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (isFormValid) {
+      setLoading(true); // Start loading
       try {
         await axios.post(`${process.env.REACT_APP_API_URL}/api/contactus`, formData);
 
@@ -50,7 +53,9 @@ const ContactUsForm = () => {
           error.response?.data?.message || "There was an issue submitting the form. Please try again."
         );
         setIsModalVisible(true);
-      }
+      } finally {
+      setLoading(false); // Stop loading
+    }
     }
   };
 
@@ -152,6 +157,12 @@ const ContactUsForm = () => {
           </button>
         </div>
       )}
+      {loading && (
+      <div className="loadingOverlay">
+        <div className="loadingMessage">Sending message...</div>
+      </div>
+    )}
+    
     </div>
   );
 };
