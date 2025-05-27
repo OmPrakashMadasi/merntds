@@ -64,13 +64,13 @@ const Careers = () => {
     );
   }
  
-  if (error) {
-    return (
-      <div className="alert alert-danger" role="alert">
-        {error}
-      </div>
-    );
-  }
+  // if (error) {
+  //   return (
+  //     <div className="alert alert-danger" role="alert">
+  //       {error}
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
