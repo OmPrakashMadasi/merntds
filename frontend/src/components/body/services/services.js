@@ -321,7 +321,7 @@ export const servicesNavData = [
     imageSrc: webapplication,
     description: "Experience the Web Design Revolution",
     description1:
-      "Elevate your digital presence with advanced Web Development solutions that drive performance and innovation. We build dynamic, user-centric websites that captivate audiences and deliver exceptional results.",
+      "Enhance your digital presence with advanced Web Development solutions driving performance and innovation. The best website designing and development company in Hyderabad and leading web designing company in India, we build dynamic, user-centric websites captivating audiences, delivering results.",
     offerings: [
       "Custom Websites",
       "E-Commerce Solutions",
@@ -436,28 +436,35 @@ export const teamMembers = [
     additionalInfo: "Leads Technical projects and teams."
   },
   {
+    name: "Bhavya",
+    designation: "Manager",
+    imageSrc: require('../../../assets/images/bhavya.jpg'),
+    additionalInfo: "optimizing daily operations and nurturing a cohesive and productive team."
+  },
+  {
     name: "Vrushvini",
-    designation: "Assistant Manager",
+    designation: "Project Manager",
     imageSrc: require('../../../assets/images/v.jpg'),
     additionalInfo: "Manages organizational processes efficiently."
   },
   {
-    name: "Vijay Yeddula",
-    designation: "Digital Marketing Executive",
-    imageSrc: require('../../../assets/images/vijay.jpg'),
-    additionalInfo: "Expert in digital marketing strategies."
+    name: "Om Prakash",
+    designation: "Web Developer",
+    imageSrc: require('../../../assets/images/op.jpg'),
+    additionalInfo: "Codes Innovative web solutions effectively."
   },
   {
-    name: "Karthik",
-    designation: "Digital Marketing Executive",
-    imageSrc: require('../../../assets/images/karthik.jpg'),
-    additionalInfo: "Specializes in online marketing strategies."
-  },  
+    name: "Hari Krishna",
+    designation: "Web Developer",
+    imageSrc: require('../../../assets/images/hari.jpg'),
+    additionalInfo: "Builds and maintains functional and visually appealing websites and web applications."
+  },
+   
   {
     name: "Akhil",
     designation: "UI/UX Designer",
     imageSrc: require('../../../assets/images/akhil.jpg'),
-    additionalInfo: "Creates intuitive user experiences"
+    additionalInfo: "Creates intuitive user experiences."
   },
   {
     name: "Harshith",
@@ -472,23 +479,25 @@ export const teamMembers = [
     additionalInfo: "Creates user-centered designs for digital products."
   },
   {
-    name: "Om Prakash",
-    designation: "Web Developer",
-    imageSrc: require('../../../assets/images/op.jpg'),
-    additionalInfo: "Codes Innovative web solutions effectively."
+    name: "Vijay Yeddula",
+    designation: "Digital Marketing Executive",
+    imageSrc: require('../../../assets/images/vijay.jpg'),
+    additionalInfo: "Expert in digital marketing strategies."
   },
   {
-    name: "Sneha Latha",
-    designation: "Web Developer",
-    imageSrc: require('../../../assets/images/sneha3.jpg'),
-    additionalInfo: "Develops and optimizes websites to ensure seamless performance."
-  },
-  {
-    name: "Hari Krishna",
-    designation: "Web Developer",
-    imageSrc: require('../../../assets/images/hari.jpg'),
-    additionalInfo: "Builds and maintains functional and visually appealing websites and web applications."
-  },
+    name: "Karthik",
+    designation: "Digital Marketing Executive",
+    imageSrc: require('../../../assets/images/karthik.jpg'),
+    additionalInfo: "Specializes in online marketing strategies."
+  }, 
+  
+  // {
+  //   name: "Sneha Latha",
+  //   designation: "Web Developer",
+  //   imageSrc: require('../../../assets/images/sneha3.jpg'),
+  //   additionalInfo: "Develops and optimizes websites to ensure seamless performance."
+  // },
+  
 ];
 
 
