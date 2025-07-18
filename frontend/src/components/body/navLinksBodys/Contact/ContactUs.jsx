@@ -9,64 +9,20 @@ import picklesplatterlogo from "../../../../assets/blogImages/pickelsplatter.jpg
 import orisonlogo from "../../../../assets/blogImages/orison.png";
 import cinematicmandilogo from "../../../../assets/blogImages/cinematicmandi.jpg";
 import forestmandilogo from "../../../../assets/blogImages/forestmandi.jpg";
+import i20feverlogo from "../../../../assets/blogImages/i20fever.jpg"
 import "bootstrap/dist/css/bootstrap.min.css";
 import ContactUsForm from "../../../forms/ContactUsForm";
 
 const ContactUs = () => {
   const [showModal, setShowModal] = useState(false);
 
-  useEffect(() => {
-    // Show cards with delay
-    const showCards = () => {
-      setTimeout(() => {
-        document.getElementById("card1").style.opacity = "1";
-        document.getElementById("card1").style.transform = "translateY(0)";
-      }, 500);
+useEffect(() => {
+  const showModalTimeout = setTimeout(() => {
+    setShowModal(true);
+  }, 3000);
 
-      setTimeout(() => {
-        document.getElementById("card2").style.opacity = "1";
-        document.getElementById("card2").style.transform = "translateY(0)";
-      }, 1000);
-
-      setTimeout(() => {
-        document.getElementById("card3").style.opacity = "1";
-        document.getElementById("card3").style.transform = "translateY(0)";
-      }, 1500);
-      setTimeout(() => {
-        document.getElementById("card4").style.opacity = "1";
-        document.getElementById("card4").style.transform = "translateY(0)";
-      }, 2000);
-      setTimeout(() => {
-        document.getElementById("card5").style.opacity = "1";
-        document.getElementById("card5").style.transform = "translateY(0)";
-      }, 2500);
-      setTimeout(() => {
-        document.getElementById("card6").style.opacity = "1";
-        document.getElementById("card6").style.transform = "translateY(0)";
-      }, 3000);
-      setTimeout(() => {
-        document.getElementById("card7").style.opacity = "1";
-        document.getElementById("card7").style.transform = "translateY(0)";
-      }, 3500);
-      setTimeout(() => {
-        document.getElementById("card8").style.opacity = "1";
-        document.getElementById("card8").style.transform = "translateY(0)";
-      }, 4000);
-      setTimeout(() => {
-        document.getElementById("card9").style.opacity = "1";
-        document.getElementById("card9").style.transform = "translateY(0)";
-      }, 4500);
-    };
-
-    showCards();
-
-    // Show modal after 5 minutes (300,000 ms)
-    const showModalTimeout = setTimeout(() => {
-      setShowModal(true);
-    }, 3000); // 5 minutes
-
-    return () => clearTimeout(showModalTimeout); // Cleanup the timeout on component unmount
-  }, []);
+  return () => clearTimeout(showModalTimeout);
+}, []);
 
   const closeModal = () => {
     setShowModal(false);
@@ -83,7 +39,7 @@ const ContactUs = () => {
 
 
       {/* Modal */}
-      {showModal && (
+{showModal && (
   <div
     className="modal show d-block"
     id="contactModal"
@@ -91,16 +47,18 @@ const ContactUs = () => {
     role="dialog"
     aria-labelledby="contactModalLabel"
     aria-hidden={!showModal}
+    style={{ pointerEvents: "none" }} // Allow background interaction
   >
     <div
       className="modal-dialog"
       role="document"
-      style={{ 
-        marginTop: "6%", 
-        position: "fixed", 
-        right: "0", 
-        top: "16%", 
-        transform: "translateX(0)" 
+      style={{
+        marginTop: "10%",
+        position: "fixed",
+        right: "0",
+        top: "15%",
+        transform: "translateX(0)",
+        pointerEvents: "none", // Enable interaction inside modal
       }}
     >
       <div className="modal-content border-0 bg-transparent">
@@ -109,6 +67,7 @@ const ContactUs = () => {
     </div>
   </div>
 )}
+
 
       {/* Main Content */}
       <div style={{ backgroundColor: "#f0f1f2" }}>
@@ -123,63 +82,21 @@ With our expertise and dedication, we strive to exceed expectations and build la
 
               </h6>
             </div>
-
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4 rounded-lg ${styles.projectCard}`} id="card1">
-                <h6 className={styles.projectName} style={{fontSize: 15}}>Sri SVS Pearls & Jewellers</h6>
-                <img className="img-fluid" src={svs} alt="Sri SVS Pearls & Jewellers" style={{ width: '100%', height: 200,  }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4 ml-3" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card2">
-                <h6 className={styles.projectName}>Bhonchesara</h6>
-                <img className="img-fluid" src={bhonchesaraLogo} alt="Bhonchesara" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card3">
-                <h6 className={styles.projectName}>Team 9 Infra</h6>
-                <img className="img-fluid" src={teamslogo} alt="Team 9 Infra" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card4">
-                <h6 className={styles.projectName}>Orison</h6>
-                <img className="img-fluid" src={orisonlogo} alt="Orison" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card5">
-                <h6 className={styles.projectName}>Coolidge Foundation</h6>
-                <img className="img-fluid" src={coolidgelogo} alt="Coolidge Foundation" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card6">
-                <h6 className={styles.projectName}>Pickles Platter</h6>
-                <img className="img-fluid" src={picklesplatterlogo} alt="Pickles Platter" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card7">
-                <h6 className={styles.projectName}>Sri Karthik Power Tools</h6>
-                <img className="img-fluid" src={powertoolslogo} alt="Sri Karthik Power Tools" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card8">
-                <h6 className={styles.projectName}>Forest Mandi</h6>
-                <img className="img-fluid" src={forestmandilogo} alt="Forest Mandi" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
-            <div className="col-md-3 mb-4 mt-4" >
-              <div className={`d-flex flex-column align-items-center justify-content-center p-4  rounded-lg ${styles.projectCard}`} id="card9">
-                <h6 className={styles.projectName}>Cinematic Universe Mandi</h6>
-                <img className="img-fluid" src={cinematicmandilogo} alt="Cinematic Universe Mandi" style={{ width: '100%', height: 200 }} />
-              </div>
-            </div>
+            <div className={styles.sliderWrapper}>
+  <div className={styles.sliderTrack}>
+    {[svs, bhonchesaraLogo, teamslogo, orisonlogo, coolidgelogo, picklesplatterlogo, powertoolslogo, forestmandilogo, cinematicmandilogo, i20feverlogo].map((logo, idx) => (
+      <div key={idx} className={styles.slide}>
+        <img src={logo} alt={`Client logo ${idx + 1}`} />
+      </div>
+    ))}
+    {/* Repeat once more for seamless loop */}
+    {[svs, bhonchesaraLogo, teamslogo, orisonlogo, coolidgelogo, picklesplatterlogo, powertoolslogo, forestmandilogo, cinematicmandilogo, i20feverlogo].map((logo, idx) => (
+      <div key={`duplicate-${idx}`} className={styles.slide}>
+        <img src={logo} alt={`Client logo duplicate ${idx + 1}`} />
+      </div>
+    ))}
+  </div>
+</div>
             
           </div>
         </div>
